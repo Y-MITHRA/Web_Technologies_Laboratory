@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sign-In</title>
+    <script type="text/javascript">
+                function validateform()
+               {  
+                var flag=1;
+                if(document.myform.email.value=="")
+                {
+                    flag=0;
+                }
+                if(flag==1)
+                {
+                    alert("VALID INPUT");
+                }
+                else
+                {
+                    alert("INVALID INPUT");
+                    document.myform.focus();
+                }
+            }
+             
+               function emailvalidation()
+               {
+                    var a=document.myform.email.value
+                    if (a.indexOf("@")==-1)
+                    {
+                         alert("Please enter valid email address")
+                         document.myform.email.focus();
+                    }
+                } 
+    </script>
+    <link rel="stylesheet" type="text/css" href="googlestyle.css" >
+</head>
+<body>
+    <div class="signin-container">
+        <div class="google-logo">
+            <span style="color:#4285F4">G</span>
+            <span style="color: orangered;">o</span>
+            <span style="color: yellow;">o</span>
+            <span style="color: blue;">g</span>
+            <span style="color: green;">l</span>
+            <span style="color: red;">e</span>
+        </div>
+        <p style="font-weight: bold;font-size: 19px;"> Sign in</p>
+        <p> Use your Google Account</p>
+        <br>
+        <form name="myform" method="post" action="#" onsubmit="return validateform()">
+            <div>   
+                <input  type="email" id="email" name="email" placeholder="Email or phone" onblur="emailvalidation() "/>
+            </div>   
+        </form>
+        <div class="forgot">
+            <span>Forgot email?</span>
+        </div>
+        <br><br>
+            <p style="font-size: 15px;text-align: start;color: rgb(135, 133, 133);">to continue to Gmail</p>
+            <div class="learn">
+            <span>Learn more</sp>
+            </div>            
+            <br>
+            
+            <div class="button-container">
+                <p style="color: #357AE8;font-size: 16px;font-weight: bold;">Create account</p>
+                <button class="next">Next</button>
+            </div>
+            <br><br><br>
+
+            <div class="links-container">
+                <div>English (United States)<i class="fas fa-chevron-down"></i></div>
+                <div>Help</div>
+                <div>Privacy</div>
+                <div>Terms</div>
+            </div>
+</div>    
+</body>
+</html>

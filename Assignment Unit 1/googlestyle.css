@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f2f2f2; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signin-container {
+    border: 0.5px solid rgb(185, 181, 181); /* Add a 2px solid black border */
+    border-radius: 5px;
+    padding: 20px;
+    width: 450px;
+    height: 500px;
+    text-align: center;
+    box-sizing: border-box;
+        }
+
+
+input[type="email"] {
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    font-size:medium;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.forgot{
+    color: #357AE8;
+    text-align:left;
+    cursor:pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+.next {
+    background-color: #357AE8;
+    border-radius: 6px;
+    border-color: #357AE8;
+    color: white;
+    cursor: pointer;          
+    width: 70px;
+    height: 43px;
+    font-weight: bold;
+    font-size: 15px;    
+    align-self: flex-end;    
+}
+
+.next:hover{
+    opacity: 0.9;
+}
+.learn
+{
+    text-align: start;
+    color: #357AE8;
+    cursor: pointer;
+
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.google-logo {
+    margin-top: 15px;
+    font-weight: bold;
+}
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
